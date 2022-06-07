@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<title>Ahorcado Alura</title>
+	<link rel="stylesheet"  href="css/style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Rubik&display=swap" rel="stylesheet">
+</head>
+	<body>
+		<div class="contenedor">
+			
+			<div class="logo">
+				<img class="vista" src="img/logoalura.png" alt="Logo Alura">
+				<h1 class="textoLogo">Juego del Ahorcado</h1>
+			</div>
+
+			<section id="agregarPalabras">
+				<div id="ingreso">
+					<input type="text" id="caja" maxlength="8" placeholder="ingrese palabra"></input>
+				</div>
+				<div class="botoneraAgregar">
+					<p id="advertencia">Maximo de 8 letras y sin acentos</p>
+					<button id="jugar">Jugar</button>
+					<button id="guardar">Guardar</button>
+					<button id="cancelar">Cancelar</button>
+				</div>
+			</section>
+
+			<section id="juego">
+				<div id="muneco">
+					<canvas id="canvas">
+
+					</canvas>
+						<div class="mensajes">
+							<p id="ganaste">¡Felicitaciones Ganaste!</p>
+							<p id="perdiste">¡Perdiste vuelve a intentarlo!</p>
+						</div>
+				</div>
+				<div id="palabraOculta">
+					<p id="palabraAdivinar">
+					
+					</p>
+				</div>
+				<div id="letrasIngreso">
+					<p id="letrasIngresadas">
+					   <span> </span>
+					</p>
+				</div>
+				<div id="botoneraJuego">
+					<button id="nuevo">Nuevo Juego</button>
+					<button id="desistir">Desistir</button>
+				</div>
+			</section>
+
+			<div class="botonera">
+				<button id="iniciar">Iniciar Juego</button>
+				<button id="agregar" >Agregar Palabra</button>
+			</div>
+		</div>
+	<script src="js/script.js"></script>
+	<script src="js/canvas.js"></script>
+	 <footer>
+    	
+      <h3 id="texto3">@Dafernan</h3>
+  
+    </footer>
+	</body>
+
+</html>
